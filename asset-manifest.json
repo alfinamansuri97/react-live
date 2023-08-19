@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-live/static/css/main.a5fe710e.css",
-    "main.js": "/react-live/static/js/main.b7735f7d.js",
+    "main.js": "/react-live/static/js/main.4f1e3b42.js",
     "static/js/787.635aedaa.chunk.js": "/react-live/static/js/787.635aedaa.chunk.js",
     "static/media/about-banner-bg.png": "/react-live/static/media/about-banner-bg.87db867b081e0f38b07d.png",
     "static/media/banner-bg-2.png": "/react-live/static/media/banner-bg-2.783a2a682ed92740b8da.png",
@@ -15,7 +15,6 @@
     "static/media/FONTSPRINGDEMO-RocGroteskBold.svg": "/react-live/static/media/FONTSPRINGDEMO-RocGroteskBold.2f675052b46c3542d022.svg",
     "static/media/FONTSPRINGDEMO-RocGroteskCompressedRegular.svg": "/react-live/static/media/FONTSPRINGDEMO-RocGroteskCompressedRegular.73acf4b7d4f05e29b251.svg",
     "static/media/FONTSPRINGDEMO-RocGroteskCompressedLightRegular.svg": "/react-live/static/media/FONTSPRINGDEMO-RocGroteskCompressedLightRegular.cb3622b3a9d93a859120.svg",
-    "static/media/about-banner-logo.png": "/react-live/static/media/about-banner-logo.b888a1da8eab226f6594.png",
     "static/media/FONTSPRINGDEMO-RocGroteskExtraWideRegular.eot": "/react-live/static/media/FONTSPRINGDEMO-RocGroteskExtraWideRegular.7b10cb7054c382312762.eot",
     "static/media/FONTSPRINGDEMO-RocGroteskCompressedMediumRegular.eot": "/react-live/static/media/FONTSPRINGDEMO-RocGroteskCompressedMediumRegular.46691447f13b46a9a449.eot",
     "static/media/FONTSPRINGDEMO-RocGroteskExtraWideRegular.ttf": "/react-live/static/media/FONTSPRINGDEMO-RocGroteskExtraWideRegular.95a38d0e99e658f04e50.ttf",
@@ -63,11 +62,11 @@
     "static/media/banner_icon.svg": "/react-live/static/media/banner_icon.e60aaaa0c94aa61ef8cbd0edbb7b489e.svg",
     "index.html": "/react-live/index.html",
     "main.a5fe710e.css.map": "/react-live/static/css/main.a5fe710e.css.map",
-    "main.b7735f7d.js.map": "/react-live/static/js/main.b7735f7d.js.map",
+    "main.4f1e3b42.js.map": "/react-live/static/js/main.4f1e3b42.js.map",
     "787.635aedaa.chunk.js.map": "/react-live/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5fe710e.css",
-    "static/js/main.b7735f7d.js"
+    "static/js/main.4f1e3b42.js"
   ]
 }

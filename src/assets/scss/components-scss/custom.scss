@@ -1,0 +1,146 @@
+
+    // @include rem-fallback(padding,10,0);
+    .brands-block{
+        @include rem-fallback(padding,40,0);
+        border-bottom:1px solid $black;
+        .brands-listing{
+            display: flex;
+            justify-content: space-between;
+            margin:0 -15px;
+            @include bp(ssm-max){
+                flex-direction:column;
+                margin:0;
+            }
+            li{
+                flex:0 0 24.33%;
+                max-width:24.33%;
+                @include rem-fallback(padding,0,15);
+                text-align: left;
+                @include bp(xxlg-max){
+                    flex:0 0 33.33%;
+                    max-width:33.33%;
+                }
+                @include bp(ssm-max){
+                    flex:0 0 100%;
+                    max-width:450px;
+                    width:100%;
+                    padding: 0;
+                    @include rem-fallback(margin-bottom,30);
+                }
+                p{
+                    letter-spacing:0.48px;
+                    color:$black;
+                    font-family: $sec_book_font;
+                    margin-bottom: 0;
+                    
+                }
+                a{
+                    text-decoration:underline;
+                    color:$black;
+                    &:hover{
+                        color:$blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider-block{
+        @include rem-fallback(padding,30,0);
+        border-bottom: 1px solid $black;
+        overflow-x: hidden;
+        @include bp(ssm-max){
+            @include rem-fallback(padding,13,0); 
+        }
+        .slider{
+            margin:0 -15px;
+            p{
+                color:$black;
+                font-family: $sec_bold_font;
+                font-weight:700;
+                margin:0;
+                @include rem-fallback(padding,0,15);
+                @include bp(ssm-max){
+                    padding:0;
+                    text-align: center;
+                }
+                span{
+                    font-family: $sec_reg_font;
+                }
+
+            }
+        }
+    }
+
+    .banner,.brands-block{
+        .container{
+            @include bp(ssm-max){
+                @include rem-fallback(padding,0,50);
+            }
+            @include bp(xxxs-max){
+                @include rem-fallback(padding,0,15);
+            }
+        }
+    }
+
+    .brands-block{
+        @include bp(ssm-max){
+            padding-bottom:0;
+            background-size: cover;
+            background-image: url('../../images/banner-bg.png');
+            background-position: -293px 431px;
+            position: relative;
+
+        }
+        &:after{
+            @include bp(ssm-max){
+                content:"";
+                position: absolute;
+                bottom:0;
+                top:0;
+                right:0;
+                left:0;
+                background-image: url('../../images/banner-bg.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: -3% -320px;
+                z-index: -1;
+            }
+        }
+        .brands-social{
+            @include bp(ssm-max){
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+        .social-links{
+            position: relative;
+            @include bp(ssm-max){
+            display: inline-flex !important;
+            min-width:157px;
+            justify-content: space-between;
+            margin:100px 0;
+            }
+            &:after,&:before{
+                content: "";
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%);
+                width:1px;
+                background-color: $black;
+                height:100px;
+
+            }
+            &:after{
+                bottom:-100px;
+            }
+            &:before{
+                top:-100px;
+            }
+        }
+        @include bp(xxs-max){
+            border-bottom:0;
+        }
+    }

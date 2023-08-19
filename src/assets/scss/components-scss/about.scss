@@ -1,0 +1,83 @@
+.about-page{
+    .wrapper{
+    background-color: $black !important;
+    // height:calc(100vh - 267px);
+    }
+}
+.about-page{
+    .site-header{
+    background-color: $black !important;
+    }
+}
+
+.about-page{
+    .site-header{
+        border-bottom:1px solid $white;
+        .inner-header{
+        .nav-bar{
+            li{
+                border-color:$white;
+                a{
+                    color:$white;
+
+                    &:after{
+                        background-color:$white;
+                    }
+                }
+               
+            }
+        }
+        .header-right-block {
+            .user-block{
+                border-color:$white;
+            }
+            .user-btn{
+                color:$white;
+                border-color:$white;
+                &:hover{
+                    border-color:$white;
+                    color:$black;
+                    background-color:$white;
+                }
+            }
+        }
+        }
+    }
+    .hamburger-block{
+        span{
+            background-color:$white;
+            &:after,&:before{
+                background-color:$white;
+            }
+        }
+    }
+    .slider-block{
+        border-color:$white;
+        border-top: 1px solid $white;
+        .slider{
+
+            p{
+                color:$white;
+            }
+        }
+    }
+}
+.about-banner{
+    background-color: $black;
+    padding:100px 0;
+    background-image: url('../../images/about-banner-bg.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    .about-banner-logo{
+        i{
+            display: inline-block;
+            max-width:400px;
+            width:100%;
+            img{
+                width:100%;
+                display:block;
+            }
+        }
+    }
+}

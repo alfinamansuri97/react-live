@@ -1,0 +1,227 @@
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Css Clearfix */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  overflow-y: inherit;
+}
+
+/* alignment */
+.alignleft{float: left;}
+.alignright{float: right;}
+
+/* box sizing  */
+*, *::before, *::after{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    @include rem-fallback(margin-top,86);
+    @include bp(smd-max){
+      @include rem-fallback(margin-top,60);
+    }
+  }
+  
+  html {
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased; 
+    -moz-font-smoothing: antialiased; 
+    -o-font-smoothing: antialiased;
+  }
+  body{
+   background-color: $off_white;
+    font-family: $pri-font;
+    margin: 0; 
+    @include rem-fallback(font-size,18) ;
+    height:100%;
+    font-weight:400;
+    -webkit-font-smoothing: antialiased; 
+    -moz-font-smoothing: antialiased; 
+    -o-font-smoothing: antialiased;
+    &::-moz-selection{
+        background-color:$gray;
+        color:$black;
+    }
+    &::selection{
+        background-color:$gray;
+        color:$black;
+    }
+  }
+  
+  ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  a , button{
+    cursor:pointer;
+    @include transition(all 0.3s);
+  }
+  a{
+    &:hover{
+        text-decoration: none;
+    }
+    &:focus{
+        outline:none;
+    }
+  }
+  
+  button{
+    &:hover , &:focus{
+        outline: none;
+    }
+  }
+  
+  input{
+    &:focus{
+        outline:none;
+    }
+  }
+  
+  .wrapper{
+    min-height: 100%;
+  
+  }
+  .container-fluid{
+    @include rem-fallback(max-width,1920);
+      @include rem-fallback(padding,0,15);
+      margin:0 auto;
+      width:100%;
+  }
+  .container{
+      
+      @include rem-fallback(max-width,1600);
+      @include rem-fallback(padding,0,15);
+      margin:0 auto;
+      width:100%;
+  }
+  .inner-container{
+      max-width:1152px;
+      width:100%;
+      margin:0 auto;
+  
+  }
+  
+  
+  .pull-right{
+    float: right!important;
+  }
+  
+  .hidden-ssm,.hidden-xxs{
+    @include bp(ssm-max){
+      display: none !important;
+    }
+  }
+  
+  .visible-ssm,.visible-xxs{
+    display:none !important;
+    @include bp(ssm-max){
+        display:block !important;
+    }
+  }
+  
+  
+  
+  .border-btn{
+    border:1px solid $white;
+    color:$white;
+    background-color: transparent;
+    @include rem-fallback(min-width,160);
+    @include rem-fallback(min-height,42);
+    @include rem-fallback(padding,10);
+    @include rem-fallback(font-size,22);
+    line-height:1.2;
+    font-family:$sec_reg_font;
+    text-decoration:none;
+  }
+
+  .white-btn{
+    border:1px solid $black;
+    color:$black;
+    background-color: $white;
+    @include rem-fallback(min-width,238);
+    @include rem-fallback(min-height,42);
+    @include rem-fallback(padding,10);
+    @include rem-fallback(font-size,24);
+    line-height:1.2;
+    font-family:$sec_reg_font;
+    text-decoration: none;
+    box-shadow: 6px 6px 0px $black;
+    transition: 0.3s all;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background-color:$black;
+      color:$white;
+      box-shadow: 6px 6px 0px $gray;
+    }
+    @include bp(md-max){
+      @include rem-fallback(min-width,188);
+  }
+  @include bp(smd-max){
+    @include rem-fallback(min-width,148);
+    @include rem-fallback(font-size,18);
+  }
+  @include bp(ssm-max){
+    @include rem-fallback(min-width,114);
+    @include rem-fallback(min-height,27);
+    @include rem-fallback(font-size,14);
+  }
+  }

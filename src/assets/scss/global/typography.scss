@@ -1,0 +1,86 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	margin: 0;
+	@include rem-fallback(margin,0,0,16);
+}
+h1 {
+	@include rem-fallback(font-size,78);
+	line-height:1.2;
+	@include rem-fallback(margin,0,0,22);
+	@include bp(xxlg-max){
+		@include rem-fallback(font-size,50);
+	}
+	@include bp(lg-max){
+		@include rem-fallback(font-size,42);
+	}
+	@include bp(smd-max){
+		@include rem-fallback(font-size,36);
+	}
+}
+
+h2{
+	@include rem-fallback(font-size,44);
+	line-height:1.2;
+	@include rem-fallback(margin,0,0,22);
+	
+}
+
+h3{
+	@include rem-fallback(font-size,38);
+	line-height:1.2;
+	@include rem-fallback(margin,0,0,30);
+
+}
+h4{
+	@include rem-fallback(font-size,32);
+	line-height:1.2;
+	@include rem-fallback(margin,0,0,30);
+
+}
+h5{
+	@include rem-fallback(font-size,22);
+	line-height:1.2;
+	@include rem-fallback(margin,0,0,30);
+
+}
+
+p {
+	@include rem-fallback(font-size,30);
+	line-height:1.2;
+	@include rem-fallback(margin,0,0,16);
+	
+	font-weight: 300;
+	@include bp(xxlg-max){
+		@include rem-fallback(font-size,26);
+	}
+	@include bp(md-max){
+		@include rem-fallback(font-size,22);
+	}
+	@include bp(smd-max){
+		@include rem-fallback(font-size,20);
+	}
+	@include bp (ssm-max){
+		@include rem-fallback(font-size,18);
+	}
+}
+
+i,em{
+	font-style: normal;
+}
+
+a{
+	@include transition(0.3s);
+}
+
+
+
+
+
+.dk-select-options{
+	z-index: 2;
+}
+

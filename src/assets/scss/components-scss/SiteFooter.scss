@@ -1,0 +1,84 @@
+.site-footer{
+    @include rem-fallback(padding,30,0);
+    background-color: $off_white;
+    z-index: 1;
+    position: relative;
+    @include bp(xxs-max){
+        padding-top:0;
+    }
+    .inner-footer{
+        @include bp(xxs-max){
+            margin:0 -15px;
+        }
+    }
+    .footer-listing{
+
+        display: flex;
+        max-width: 1660px;
+        width:100%;
+        margin:0 auto;
+        flex-wrap: wrap;
+        border-right:1px solid $black;
+        border-bottom:1px solid $black;
+        @include bp(xxs-max){
+            border-right:0;
+            border-left:0;
+            border-bottom:0;
+        }
+        > li{
+            flex:0 0 20%;
+            max-width:20%;
+            @include rem-fallback(padding,20,10);
+            border:1px solid $black;
+            border-bottom:0;
+            border-right:0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include bp(ssm-max){
+                flex:0 0 50%;
+                max-width:50%;
+               
+            }
+            @include bp(xxs-max){
+                flex:0 0 100%;
+                max-width:100%;
+                border-left:0;
+            }
+           > a{
+                display:inline-block;
+                @include rem-fallback(font-size,20);
+                font-family: $sec_reg_font;
+                color:$black;
+                text-decoration:none;
+            
+                position: relative;
+                &::after{
+                    content:"";
+                    position: absolute;
+                    bottom:-3px;
+                    left:50%;
+                    right:50%;
+                    height:1px;
+                    width:0;
+                    background-color:$black;
+                    transition: 0.3s all;
+                }
+                &:hover{
+                    &:after{
+                        width:100%;
+                        left:0;
+                        right:0;
+                    }
+                }
+            }
+        }
+        .social-links{
+            border:0;
+            padding: 0;
+            li{
+                @include rem-fallback(padding,0,10); 
+            }
+        }
+    }
+}

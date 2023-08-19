@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-live/static/css/main.a5fe710e.css",
-    "main.js": "/react-live/static/js/main.3d8fb7d8.js",
+    "main.js": "/react-live/static/js/main.b7735f7d.js",
     "static/js/787.635aedaa.chunk.js": "/react-live/static/js/787.635aedaa.chunk.js",
     "static/media/about-banner-bg.png": "/react-live/static/media/about-banner-bg.87db867b081e0f38b07d.png",
     "static/media/banner-bg-2.png": "/react-live/static/media/banner-bg-2.783a2a682ed92740b8da.png",
@@ -63,11 +63,11 @@
     "static/media/banner_icon.svg": "/react-live/static/media/banner_icon.e60aaaa0c94aa61ef8cbd0edbb7b489e.svg",
     "index.html": "/react-live/index.html",
     "main.a5fe710e.css.map": "/react-live/static/css/main.a5fe710e.css.map",
-    "main.3d8fb7d8.js.map": "/react-live/static/js/main.3d8fb7d8.js.map",
+    "main.b7735f7d.js.map": "/react-live/static/js/main.b7735f7d.js.map",
     "787.635aedaa.chunk.js.map": "/react-live/static/js/787.635aedaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5fe710e.css",
-    "static/js/main.3d8fb7d8.js"
+    "static/js/main.b7735f7d.js"
   ]
 }

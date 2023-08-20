@@ -45,6 +45,17 @@
                 max-width:100%;
                 border-left:0;
             }
+            &.hidden-xxs{
+                @include bp(ssm-max){
+                    display:none !important;
+                }
+            }
+            &.visible-xxs{
+                display:none !important;
+                @include bp(ssm-max){
+                    display:flex !important;
+                }
+            }
            > a{
                 display:inline-block;
                 @include rem-fallback(font-size,20);

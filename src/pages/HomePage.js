@@ -12,6 +12,7 @@ function HomePage() {
     const settings = {
         dots: false,
         infinite: true,
+        arrows:false,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 2,

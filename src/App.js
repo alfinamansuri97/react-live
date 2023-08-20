@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HomePage from './pages/HomePage';
 import About from './pages/About';
 
+
 function App() {
   return (
   
@@ -14,7 +15,7 @@ function App() {
                 <Route exact path='/' element={< HomePage />}></Route>
                 <Route exact path='/about' element={< About />}></Route>
         </Routes>
-
+     
   );
 }
 

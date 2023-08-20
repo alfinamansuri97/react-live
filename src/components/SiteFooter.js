@@ -25,7 +25,7 @@ function SiteFooter() {
                   </ul>
                   </li>
                   <li><Link to="/" title="Our partners">Our partners</Link></li>
-                  <li><Link to="/" title="About">About</Link></li>
+                  <li><Link to="/about" title="About">About</Link></li>
                   <li><Link to="/" title="Past Events">Past Events</Link></li>
                   <li><Link to="/" title="Blog">Blog</Link></li>
                   <li><Link to="/" title="Privacy & Cookies">Privacy & Cookies</Link></li>

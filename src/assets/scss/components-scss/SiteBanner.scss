@@ -253,6 +253,7 @@
     bottom:-23%;
     right:21%;
     display:inline-block;
+    pointer-events: none;
     @include rem-fallback(width,188);
     @include rem-fallback(height,172);
     @include bp(xxlg-max){
